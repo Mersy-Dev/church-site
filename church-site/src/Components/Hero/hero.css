@@ -13,9 +13,6 @@
     background-repeat: no-repeat;
     z-index: -1;
 } */
-
-
-
 /* 
 
 .hero h3 {
@@ -30,13 +27,25 @@
     padding-top: 150px;
   } */
   
-
+  .socials{
+    width: 60px;
+    height: 220px;
+    background-color: black;
+    position: fixed;
+    top: 500px;
+    left: 94%;
+    border-radius: 5px;
+    z-index: 1;
+  }
 
   .hero-container {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     height: 60vh; /* Adjust as needed */
     overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* Equal column distribution */
+    gap: 10px; /* Adjust the gap between items as needed */
   }
   
   .video-background {
@@ -60,9 +69,42 @@
   }
   
   .text-overlay h1 {
-    font-size: 3rem; /* Adjust font size */
-    /* Add other styles as needed */
     color: white;
     font-size: 80px;
 
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+
+  .text-overlay h1{
+    font-size: 60px;
+  }
+  .socials{
+    width: 60px;
+    height: 220px;
+    background-color: black;
+    position: fixed;
+    top: 500px;
+    left: 65%;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  
+ 
+ 
+ 
+ }

@@ -9,12 +9,12 @@ const Activities = () => {
   return (
     <> 
         <section className='activities top' id='activities'>
-            <div className="container">
+            <div className="containd">
                 <div className="heading">
                     <h3>JOIN US IN</h3>
                 </div>
 
-                <div className="content grid">
+                <div className="content grids">
                     {
                         data.map((val, index) =>{
                             return<Card key={index} image={val.image} name={val.name}/>

@@ -1,4 +1,3 @@
-import React from 'react'
 import './hero.css';
 import { Link } from 'react-router-dom';
 import vid from '../../assets/hero.mp4'
@@ -9,6 +8,9 @@ const Hero = () => {
     return (
         <>
             <section className='hero-container' id='home'>
+                <div className="socials">
+                    
+                </div>
                 <div className='container'>
                     <video className="video-background" autoPlay loop muted>
                         <source src={vid} type="video/mp4" />

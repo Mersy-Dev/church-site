@@ -1,0 +1,78 @@
+.containedd{
+    max-width: 100%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.word{
+    max-width: 90%;
+    margin: auto;
+    height: 470px;
+}
+
+.word h2{
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+.word h3{
+    margin-bottom: 20px;
+
+}
+
+.text_holder{
+    height: 80px;
+}
+.word h2 span{
+    font-size: 35px;
+    
+}
+
+
+.word p{
+    font-size: 35px;
+    align-items: center;
+    margin: auto;
+    width:200px;
+    
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+  .containedd .word h2{
+    font-size: 20px;
+  }
+
+  .word h2 h3{
+    font-size: 20px; 
+    color: red;
+  }
+   
+  .word h2 span{
+    font-size: 25px;
+    
+}
+
+.word p{
+    font-size: 25px;
+    align-items: center;
+    margin: 80px 40px 2px auto;
+
+    
+    /* width:200px; */
+    
+}
+
+   
+}
+
+
+

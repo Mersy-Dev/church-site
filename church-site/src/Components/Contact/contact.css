@@ -1,0 +1,66 @@
+.contact{
+    background-color: #ecf0f3;
+
+}
+.contact h1{
+    font-size: 50px;
+    /* font-weight: 800; */
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.contact h1 span{
+    color: rgb(86, 86, 231);
+}
+
+.holder{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons{
+    background: none;
+    width: 500px;
+    height: 500px;
+    padding: 100px 70px;
+}
+
+.icon-items{
+    width: 250px;
+    height: 100px;
+    /* border: 1px solid black; */
+    margin: 20px 40px;
+}
+
+.ic{
+    font-size: 40px;
+    color: black;
+    margin-left: 50px;
+}
+
+.icon-items h4{
+    font-size: 15px;
+    margin: 10px 1px;
+}
+.map{
+    background-color: white;
+    width: auto;
+    height: 500px;
+    /* margin-right: 30px; */
+}
+
+@media only screen and (max-width: 500px) {
+    .contact h1{
+        font-size: 30px;
+    }
+
+    .holder{
+        flex-direction: column;
+    }
+
+    .icons{
+        background: none;
+        height: 400px;
+        margin-top: -90px;
+    }
+}
