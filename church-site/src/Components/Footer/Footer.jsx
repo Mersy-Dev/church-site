@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import './footer.css';
 
 
@@ -30,10 +31,10 @@ const Footer = () => {
                 <div className="sides">
                 <a href=""><li>Ministries</li></a> 
                     <ul>
-                        <a href=""><li>Street Church</li></a>
-                        <a href=""><li>Metro Meet</li></a>
-                        <a href=""><li>Shifting & Turnings </li></a>
-                        <a href=""><li>Signs & Wonders </li></a>
+                        <Link to="/streetchurch"><li>Street Church</li></Link>
+                        <Link to="/metro"><li>Metro Meet</li></Link>
+                        <Link to="/shiftingTurnings"><li>Shifting & Turnings </li></Link>
+                        <Link to="/signs"><li>Signs & Wonders </li></Link>
 
 
                     </ul>
