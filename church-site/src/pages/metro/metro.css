@@ -1,0 +1,55 @@
+.metro-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .metro-hero-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .metro-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distorting */
+  }
+  
+  /* Dark overlay on top of the image */
+  .metro-hero-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+    z-index: 1; /* Make sure it's behind the text */
+  }
+  
+  .metro-hero-img h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    z-index: 2; /* Ensure the text is above the dark overlay */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add shadow for better contrast */
+  }
+  
+  @media (max-width: 768px) {
+    .metro-hero-img h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
