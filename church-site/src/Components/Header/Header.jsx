@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FaTimes, FaBars } from "react-icons/fa";
 import "./header.css"
 import logo from "../../assets/mivwh-logo.PNG"
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,9 +21,11 @@ const Header = () => {
         <>
             <header className='header'>
                 <div className='container d_flex'>
-                    <div className='logo'>
-                        <img src={logo} width={150} alt='' />
-                    </div>
+                    <Link to="/">
+                        <div className='logo'>
+                            <img src={logo} width={150} alt='' />
+                        </div>
+                    </Link>
 
                     <div className='navlink'>
                         <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
